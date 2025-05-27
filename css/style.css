@@ -173,6 +173,17 @@ a:focus {
     transform: scale(1.05); /* Slight zoom effect */
 }
 
+@media (max-width: 767px) {       /* Mobile View se social media icone hatane ke liye*/
+    .wrapper .sidebar .social-links a {
+    display: none;
+    }
+
+    .logo .sitename {
+    display: none;
+    }
+}
+
+
 @media (min-width: 768px) {
     .wrapper .content {
         padding: 30px 0px 30px 30px;
