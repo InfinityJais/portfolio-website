@@ -8,7 +8,7 @@ body {
 }
 
 a {
-    color: #fdfcfc;
+    color: #fdfcfc; /* change all color to white */
     transition: all .3s;
 }
 
@@ -32,7 +32,7 @@ a:focus {
     text-decoration: none;
     width: 100%;
     padding: 10px;
-    background: #222222;
+    background: #222222; /* Dark background */
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
@@ -51,13 +51,14 @@ a:focus {
     position: relative;
     margin: 0 auto;
     width: 100%;
+    /* max-width: 1140px; */
 }
 
 .wrapper .sidebar {
     position: relative;
     width: 100%;
     float: left;
-    background: #222222;
+    background: #222222; /*sidebar ka color*/
 }
 
 .wrapper .content {
@@ -65,7 +66,7 @@ a:focus {
     width: 100%;
     padding: 15px;
     float: left;
-    background: #222222;
+    background: #222222; /*pure background ka color*/
 }
 
 .wrapper .sidebar-header,
@@ -94,7 +95,7 @@ a:focus {
 }
 
 .navbar-expand-md .navbar-nav .nav-link i {
-    color: #0070f3;
+    color: #0070f3;   /*bavbar ke text ke background ka colour*/
     float: right;
     padding-top: 5px;
     transition: all .3s;
@@ -102,12 +103,12 @@ a:focus {
 
 .navbar-expand-md .navbar-nav .nav-link:hover,
 .navbar-expand-md .navbar-nav .nav-link.active {
-    color: rgba(0, 112, 243, 1);
+    color: rgba(0, 112, 243, 1);  /*bavbar ke  hover text ke background ka colour*/
 }
 
 .navbar-expand-md .navbar-nav .nav-link:hover i,
 .navbar-expand-md .navbar-nav .nav-link.active i{
-    color: #ffffff;
+    color: #ffffff; /*bavbar ke text ka colour*/
 }
 
 
@@ -121,33 +122,33 @@ a:focus {
 
 
 .wrapper .sidebar .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 10px 0;
+    display: flex; /* Use flexbox for better responsiveness */
+    justify-content: center; /* Center the icons */
+    gap: 10px; /* Space between icons */
+    flex-wrap: wrap; /* Wrap to next line on small screens */
+    width: 100%; /* Full width for responsiveness */
+    padding: 10px 0; /* Adjust padding */
     text-align: center;
 }
 
 .wrapper .sidebar .social-links a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-size: 18px;
-    color: white; 
-    background: rgba(0, 120, 255, 0.9);; 
+    display: flex; /* Use flex to align icon properly */
+    justify-content: center; /* Center the icon */
+    align-items: center; /* Center the icon */
+    width: 40px; /* Larger for better visibility */
+    height: 40px; /* Keep it circular */
+    border-radius: 50%; /* Circular shape */
+    font-size: 18px; /* Increase font size */
+    color: white; /* Change icon color */
+    background: rgba(0, 120, 255, 0.9);; /* Social link background */
     padding: 10px;
     transition: all 0.3s ease, transform 0.2s ease;
 }
 
-
+/* Hover Effect */
 .wrapper .sidebar .social-links a:hover {
-    background: rgba(0, 150, 255, 1); 
-    transform: scale(1.1); 
+    background: rgba(0, 150, 255, 1); /* Darker shade on hover */
+    transform: scale(1.1); /* Slight zoom effect */
 }
 
 .wrapper .sidebar .social-links a i {
@@ -157,18 +158,19 @@ a:focus {
     transition: all .3s;
 }
 
+/* Site Name Styling */
 .logo .sitename {
     font-size: 24px;
     font-weight: bold;
-    color: rgb(32, 109, 8);
+    color: rgb(32, 109, 8); /* White text */
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-
+/* Hover Effect */
 .logo:hover {
-    color: #0070f3; 
-    transform: scale(1.05); 
+    color: #0070f3; /* Change text color on hover */
+    transform: scale(1.05); /* Slight zoom effect */
 }
 
 @media (min-width: 768px) {
@@ -227,12 +229,15 @@ a:focus {
         width: 150px;
         height: 150px;
         object-fit: cover;
-        border-radius: 50%;
+        border-radius: 50%; /* Make it circular */
         border: 3px solid rgba(0, 120, 255, 0.8);
         box-shadow: 0px 0px 15px rgba(0, 120, 255, 0.5);
         display: block;
         margin: 40px auto 0 auto;
     }
+    
+
+
 
     .navbar-brand {
         display: none;
@@ -266,22 +271,19 @@ a:focus {
     }
     
     .wrapper .sidebar .social-links {
-        justify-content: center;
+        justify-content: center; /* Center icons on small screens */
         gap: 10px;
     }
     
     .wrapper .sidebar .social-links a {
-        width: 40px; 
+        width: 40px; /* Slightly smaller */
         height: 40px;
         font-size: 18px;
     }
 
     .logo .sitename {
-        font-size: 18px; 
+        font-size: 18px; /* Reduce font size */
         letter-spacing: 1px;
-    }
-    .sidebar {
-        display: none;
     }
 }
 
@@ -330,13 +332,12 @@ a:focus {
     }
 
     .logo {
-        padding: 8px;
+        padding: 8px; /* Smaller padding */
     }
 
     .logo .sitename {
-        font-size: 16px;
+        font-size: 16px; /* Even smaller text */
     }
-
 }
 
 
@@ -386,10 +387,10 @@ a:focus {
 /**********************************/
 .header {
     position: relative;
-    background: url(../img/banner.png) no-repeat;
+    background: url(../img/bann.png) no-repeat;
     border-radius: 30px; 
     overflow: hidden; 
-    margin: 0 30px 30px 10px
+    margin: 0 30px 30px 10px;
 }
 
 .header .content-inner {
@@ -430,6 +431,46 @@ a:focus {
     color: #f1f083;
 }
 
+.large-btn .content-inner {
+    font-size: 0;
+    border-bottom: 30px solid #F6D155;
+}
+
+.large-btn .btn {
+    position: relative;
+    width: 50%;
+    padding: 15px 0;
+    color: #0070f3;
+    font-size: 20px;
+    background: #222222;
+    border-radius: 0;
+}
+
+.large-btn .btn:last-child {
+    color: #222222;
+    background: #0070f3;
+}
+
+.large-btn .btn i {
+    margin-right: 8px;
+}
+
+.large-btn .btn::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all .3s;
+}
+
+.large-btn .btn:hover::after {
+    width: 100%;
+    background: rgba(255, 255, 255, .1);
+}
+
+
 /**********************************/
 /******* Content Header CSS *******/
 /**********************************/
@@ -448,8 +489,7 @@ a:focus {
     margin: 0;
 }
 
-/******mobile view******/
-
+/* education main box for mobile */
 @media (max-width: 768px) {
     .header { 
         margin: 0 10px 30px 7px;
@@ -481,6 +521,8 @@ a:focus {
     }
 }
 
+
+/* education main box for Smaller Screens (Below 480px) */
 @media (max-width: 480px) {
     .header {
         margin: 0 10px 30px 4px;
@@ -526,12 +568,13 @@ a:focus {
     margin: 0 30px 30px 10px;
 }
 
+/* Responsive Video Container */
 .video-container {
     position: relative;
     width: 90%;
     max-width: 600px;
     margin: auto;
-    padding-top: 55%;
+    padding-top: 55%; /* 16:9 Aspect Ratio */
     background-color: black;
     overflow: hidden;
     border-radius: 8px;
@@ -584,8 +627,7 @@ a:focus {
     color: #ffffff;
 }
 
-/******mobile view******/
-
+/* media for mobile */
 @media (max-width: 768px) {
     .video-container {
         margin: auto;
@@ -616,6 +658,8 @@ a:focus {
     }
 }
 
+
+/* 📌 Special Styling for Smaller Screens (Below 480px) */
 @media (max-width: 480px) {
     .about .btn {
         font-size: 16px;
@@ -626,19 +670,19 @@ a:focus {
 
 .centered-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100px;
+    flex-direction: row; /* Align items in a row */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Full width */
+    height: 100px; /* Adjust height as needed */
 }
 
 .centered-text {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333; 
-    text-transform: uppercase; 
-    letter-spacing: 2px; 
+    font-size: 2rem; /* Adjust text size */
+    font-weight: bold; /* Make text bold */
+    color: #333; /* Dark gray color */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Spacing between letters */
 }
 
 /* skill section */
@@ -814,8 +858,7 @@ a:focus {
     background-position: center;
 }
 
-/******mobile view******/
-
+/* Responsive adjustments for tablets */
 @media (max-width: 1024px) {
     .tech-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -827,6 +870,7 @@ a:focus {
     }
 }
 
+/* Responsive adjustments for mobile devices */
 @media (max-width: 768px) {
     .tech-grid {
         grid-template-columns: repeat(1, 1fr);
@@ -847,6 +891,7 @@ a:focus {
     }
 }
 
+/* Adjustments for very small screens */
 @media (max-width: 480px) {
     .tech-grid {
         grid-template-columns: repeat(1, 1fr);
@@ -941,14 +986,16 @@ a:focus {
     margin: 0;
 }
 
-/******mobile view******/
 
+/* education main box for mobile */
 @media (max-width: 768px) {
     .education {
         margin: 0 10px 30px 7px;
     }
 }
 
+
+/* education main box for Smaller Screens (Below 480px) */
 @media (max-width: 480px) {
     .education {
         margin: 0 10px 30px 4px;
@@ -1044,15 +1091,15 @@ a:focus {
     margin: 0;
 }
 
-
-/******mobile view******/
-
+/* experiance main box for mobile */
 @media (max-width: 768px) {
     .experience {
         margin: 0 10px 30px 7px;
     }
 }
 
+
+/* experiance main box for Smaller Screens (Below 480px) */
 @media (max-width: 480px) {
     .experience {
         margin: 0 10px 30px 4px;
@@ -1108,14 +1155,15 @@ a:focus {
     margin: 0;
 }
 
-/******mobile view******/
-
+/* services main box for mobile */
 @media (max-width: 768px) {
     .service {
         margin: 0 10px 30px 7px;
     } 
 }
 
+
+/* services main box for Smaller Screens (Below 480px) */
 @media (max-width: 480px) {
     .service {
         margin: 0 10px 30px 4px;
@@ -1140,7 +1188,7 @@ a:focus {
     display: flex;
     background-color: #222222;
     color: #ccd6f6;
-    margin-bottom: 1px;
+    margin-bottom: 2rem;
     padding: 1.5rem;
     border-radius: 4px;
     transition: transform 0.2s ease;
@@ -1197,10 +1245,46 @@ a:focus {
     margin-top: 1rem;
 }
 
+.project-stars {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.project-stars i {
+    color: #ffffff;
+    margin-right: 0.25rem;
+}
+
+.project-downloads {
+    display: flex;
+    align-items: center;
+}
+
+.project-downloads i {
+    color: #ffffff;
+    margin-right: 0.25rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    gap: 0.5rem;
+}
+
+.tag {
+    background-color: rgba(100, 255, 218, 0.1);
+    color: #ffffff;
+    padding: 0.35rem 0.75rem;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
 .external-link {
     font-size: 1rem;
     color: #ffffff;
-    justify-content: center;
 }
 
 .external-link:hover {
@@ -1214,21 +1298,24 @@ a:focus {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    margin-left: 360px;
     text-decoration: none;
-    color: white;
-    transition: color 0.3s ease-in-out;
-    
+    color: white; /* Default text color */
+    transition: color 0.3s ease-in-out; /* Smooth transition */
+    /* Centering the element */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%; /* Ensures it's centered in a container */
 }
 
-
+/* Hover Effect */
 .project-link:hover {
-    color: #0070f3;
-    text-decoration: underline; 
+    color: #0070f3; /* Change text color on hover */
+    text-decoration: underline; /* Add underline effect */
 }
 
-/******mobile view******/
 
+/* portfolio main box for mobile */
 @media (max-width: 768px) {
     .project-card {
         flex-direction: column;
@@ -1243,11 +1330,9 @@ a:focus {
         max-height: 200px;
         overflow: hidden;
     }
-    .portfolio a{
-        margin: 0 10px 30px 30px;
-    }
 }
 
+/* portfolio main box for Smaller Screens (Below 480px) */
 @media (max-width: 480px) {
     .project-card {
         flex-direction: column;
@@ -1263,7 +1348,6 @@ a:focus {
         overflow: hidden;
     }
 }
-
 /**********************************/
 /*********** blog CSS ***********/
 /**********************************/
@@ -1281,7 +1365,7 @@ a:focus {
     display: flex;
     background-color: #222222;
     color: #ccd6f6;
-    margin-bottom: 1px;
+    margin-bottom: 2rem;
     padding: 1.5rem;
     border-radius: 4px;
     transition: transform 0.2s ease;
@@ -1338,10 +1422,46 @@ a:focus {
     margin-top: 1rem;
 }
 
+.project-stars {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.project-stars i {
+    color: #ffffff;
+    margin-right: 0.25rem;
+}
+
+.project-downloads {
+    display: flex;
+    align-items: center;
+}
+
+.project-downloads i {
+    color: #ffffff;
+    margin-right: 0.25rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    gap: 0.5rem;
+}
+
+.tag {
+    background-color: rgba(100, 255, 218, 0.1);
+    color: #ffffff;
+    padding: 0.35rem 0.75rem;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
 .external-link {
     font-size: 1rem;
     color: #ffffff;
-    justify-content: center;
 }
 
 .external-link:hover {
@@ -1352,25 +1472,24 @@ a:focus {
 /* read more button */
 .project-link {
     display: inline-block;
-    margin-left: 420px;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: white;
-    transition: color 0.3s ease-in-out;
+    color: white; /* Default text color */
+    transition: color 0.3s ease-in-out; /* Smooth transition */
+    padding-bottom: 60px; /* Add padding for better click area */
     
 }
 
-
+/* Hover Effect */
 .project-link:hover {
-    color: #0070f3;
-    text-decoration: underline; 
+    color: #0070f3; /* Change text color on hover */
+    text-decoration: underline; /* Add underline effect */
 }
 
 
-/******mobile view******/
-
+/* portfolio main box for mobile */
 @media (max-width: 768px) {
     .project-card {
         flex-direction: column;
@@ -1385,11 +1504,9 @@ a:focus {
         max-height: 200px;
         overflow: hidden;
     }
-    .blog a{
-        margin: 0 10px 30px 80px;
-    }
 }
 
+/* portfolio main box for Smaller Screens (Below 480px) */
 @media (max-width: 480px) {
     .project-card {
         flex-direction: column;
@@ -1408,15 +1525,156 @@ a:focus {
 
 
 /**********************************/
+/*********** Review CSS ***********/
+/**********************************/
+/*
+.review {
+    position: relative;
+    background: #ffffff;
+    border-radius: 30px; 
+    overflow: hidden; 
+    margin: 0 30px 30px 10px;
+}
+
+.review .content-inner {
+    position: relative;
+    padding: 60px 30px;
+    background: url(../img/quote.png) right bottom no-repeat;
+}
+
+.review .review-text p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.review .review-img {
+    display: flex;
+    align-items: center;
+}
+
+.review .review-img img {
+    width: 80px; 
+    height: 80px; 
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.review .review-name h3 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.review .review-name p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.review .review-text .ratting {
+    margin-bottom: 5px;
+}
+
+.review .review-text .ratting i {
+    color: #0070f3;
+    font-size: 14px;
+}
+
+.review .slick-slider:hover .slick-prev {
+    left: 30px;
+}
+
+.review .slick-slider:hover .slick-next {
+    right: 30px;
+}
+
+.review-slider .slick-prev,
+.review-slider .slick-next {
+    width: 35px;
+    height: 35px;
+    z-index: 1;
+    opacity: 0;
+    transition: .5s;
+    background: rgba(255, 111, 97, .7);
+}
+
+.review-slider .slick-prev {
+    left: 55px;
+}
+
+.review-slider .slick-next {
+    right: 55px;
+}
+
+.review-slider.slick-slider:hover .slick-prev {
+    left: 15px;
+    opacity: 1;
+}
+
+.review-slider.slick-slider:hover .slick-next {
+    right: 15px;
+    opacity: 1;
+}
+
+.review-slider .slick-prev:hover,
+.review-slider .slick-prev:focus,
+.review-slider .slick-next:hover,
+.review-slider .slick-next:focus {
+    background: rgba(0, 0, 0, .7);
+}
+
+.review-slider .slick-prev:hover::before,
+.review-slider .slick-prev:focus::before,
+.review-slider .slick-next:hover::before,
+.review-slider .slick-next:focus::before {
+    color: #0070f3;
+}
+
+.review-slider .slick-prev::before,
+.review-slider .slick-next::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.review-slider .slick-prev::before {
+    content: "\f104";
+}
+
+.review-slider .slick-next::before {
+    content: "\f105";
+}
+
+.review-slider .slick-dots {
+    bottom: 15px;
+}
+
+.review-slider .slick-dots li button:before {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.review-slider .slick-dots li.slick-active button:before {
+    color: #0070f3;
+}
+
+.review-slider.slick-slider {
+    margin-bottom: 0;
+}
+
+*/
+
+/**********************************/
 /*********** Contact CSS ***********/
 /**********************************/
 .contact {
     position: relative;
-    padding: 60px 30px 30px 30px;
+    padding: 50px 30px 30px 30px;
     background: #272626;
     border-radius: 30px; 
     overflow: hidden; 
-    margin: 40px 30px 30px 10px;
+    margin: 0 30px 30px 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
 }
 
@@ -1424,18 +1682,7 @@ a:focus {
     position: relative;
     width: 100%;
     margin-bottom: 30px;
-    color: #ffffff;
-}
-
-.icon-left-dirction {
-    display: inline-block;
-    width: 450px;
-    height: 250px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 10px 10px;
-    margin-bottom: 1px;
-    overflow: hidden;
+    color: #ffffff;  /*contact page ke text ka color*/
 }
 
 .contact .contact-info p {
@@ -1455,12 +1702,22 @@ a:focus {
 }
 
 .contact .contact-info p a {
-    color: #ffffff;
+    color: #ffffff;  /*contact page ke text ka color*/
 }
 
 .contact .contact-info p a:hover {
-    color: #0070f3;
+    color: #0070f3;   /*contact page ke text ka color*/
     text-decoration: none;
+}
+
+.form-control::placeholder {
+    color: gray; /* Placeholder Text Color */
+}
+
+.form-control {
+    background-color: #222222; /* Light Gray Background */
+    border: 1px solid #222222; /* Blue Border */
+    color: rgb(136, 128, 128); /* Text Color */
 }
 
 .contact .social {
@@ -1490,31 +1747,42 @@ a:focus {
     border: 1px #818181;
 }
 
-/******mobile view******/
+.contact .form {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
 
+.contact .form .form-control {
+    border-radius: 10px;
+}
+
+.contact .form .form-control:focus {
+    box-shadow: none;
+    border-color: #0070f3;
+    background-color: #222222;
+}
+
+.contact .form .btn {
+    color: #222222;
+    background: linear-gradient(135deg, rgba(0, 150, 255, 0.8), rgba(0, 80, 200, 0.9));
+    border-radius: 30px;
+    transition: all .3s;
+}
+
+.contact .form .btn:hover {
+    color: #ffffff
+    
+}
+
+/**********mobile view***************/
 @media(max-width: 768px) {
 .contact {
     position: relative;
     padding: 30px 30px 30px 30px;
     margin: 0 10px 30px 10px;
 }
-
-.icon-left-dirction {
-    display: none;
 }
-}
-
-@media(max-width: 480px) {
-    .contact {
-        position: relative;
-        padding: 30px 30px 30px 30px;
-        margin: 0 10px 30px 10px;
-    }
-    
-    .icon-left-dirction {
-        display: none;
-    }
-    }
 
 /**********************************/
 /*********** Footer CSS ***********/
