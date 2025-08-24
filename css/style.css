@@ -91,7 +91,7 @@ a:focus {
 .navbar-expand-md .navbar-nav .nav-link {
     color: #ffffff;
     padding: 5px 15px 7px 15px;
-    transition: all .3s;
+    transition: all .1s;
 }
 
 .navbar-expand-md .navbar-nav .nav-link i {
@@ -112,11 +112,12 @@ a:focus {
 }
 
 .wrapper .sidebar .sidebar-header img {
-    width: 300px;
+    width: 200px;
     height: 200px;
     object-fit: cover;
     display: block;
-    margin: 0px;
+    margin: 10px 50px 0px 50px;
+    border-radius: 50%; /* Circular image */
     }
 
 .glow-img {
@@ -124,13 +125,13 @@ a:focus {
     height: 250px;
     object-fit: cover;
     border-radius: 5px; /* optional, for slightly rounded corners */
-    border: 3px solid rgba(0, 120, 255, 0.8);
+    border: 3px solid rgba(0, 120, 255, 0.3);
 
   /* Ambient glow effect */
     box-shadow: 
-    0 0 25px rgba(0, 120, 255, 0.7),
-    0 0 50px rgba(0, 120, 255, 0.6),
-    0 0 75px rgba(0, 120, 255, 0.4);
+    0 0 25px rgba(0, 120, 255, 0.3),
+    0 0 50px rgba(0, 120, 255, 0.2),
+    0 0 75px rgba(0, 120, 255, 0.1);
 }
 
 .wrapper .sidebar,
@@ -405,18 +406,20 @@ a:focus {
 /**********************************/
 .header {
     position: relative;
-    background: url(../img/bann.png) no-repeat;
-    border-radius: 30px; 
+    background: url(../img/LLM.png) no-repeat;
+    border-radius: 10px; 
     overflow: hidden; 
+    object-fit: contain;
     margin: 0 30px 30px 10px;
 }
 
 .header .content-inner {
-    padding: 100px 30px;
-    background: url(../img/profile.png) right bottom no-repeat;
+    padding: 150px 30px;
     background-size: contain;
     overflow: hidden;
 }
+
+
 
 .header p {
     color: #0070f3;
@@ -597,8 +600,8 @@ a:focus {
     background-color: black;
     overflow: hidden;
     border-radius: 8px;
-    border: 3px solid #555;
-    box-shadow: 0px 0px 10px #c8c9c95e;
+    border: 3px solid #2e2e2e5e;
+    box-shadow: 0px 0px 10px #2e2e2e5e;
 }
 
 .video-container iframe {
@@ -1215,13 +1218,13 @@ a:focus {
 
 .project-name {
     font-size: 2rem;
-    color: #ffffff;
+    color: #666666;
     font-weight: bold;
     margin-bottom: 1px;
 }
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 0 2px #0070f3, 0 0 20px rgba(0, 112, 243, 0.5);
+    box-shadow: 0 0 0 1px rgba(0, 112, 243, 0.5), 0 0 20px rgba(0, 112, 243, 0.5);
 }
 
 .project-image {
@@ -1247,11 +1250,12 @@ a:focus {
 }
 
 .external-link {
-    color: #ffffff;
+    color: #666666;
     font-size: 15px;
 }
 .external-link:hover {
     color: #0070f3;
+
 }
 
 .tech-tags-container {
@@ -1261,8 +1265,8 @@ a:focus {
 }
 
 .tech-tag {
-    background-color:  #0078ffe6;
-    color: #ffffff;
+    background-color:  #0250aae6;
+    color: #000000;
     padding: 4px 8px;
     border-radius: 9px;
     font-size: 0.875rem;
@@ -1271,14 +1275,14 @@ a:focus {
 }
 
 .project-description ul {
-    color: #ffffff;
+    color: #666666;
     list-style: none;
     padding: 0;
     margin: 1.5rem 0;
 }
 
 .project-description p {
-    color: #ffffff;
+    color: #666666;
     margin: 0px;
 }
 

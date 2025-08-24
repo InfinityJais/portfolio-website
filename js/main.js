@@ -7,8 +7,8 @@
             event.preventDefault();
             
             $('html, body').animate({
-                scrollTop: $(this.hash).offset().top - 30
-            }, 1500, 'easeInOutExpo');
+                scrollTop: $(this.hash).offset().top - 80
+            }, 1000, 'easeInOutExpo');
             
             if ($(this).parents('.navbar-nav').length) {
                 $('.navbar-nav .active').removeClass('active');
