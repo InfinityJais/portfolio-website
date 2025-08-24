@@ -31,7 +31,7 @@ a:focus {
     justify-content: center;
     text-decoration: none;
     width: 100%;
-    padding: 10px;
+    padding: 10px 0 0 0;
     background: #222222; /* Dark background */
     transition: background 0.3s ease, transform 0.2s ease;
 }
@@ -111,6 +111,27 @@ a:focus {
     color: #ffffff; /*bavbar ke text ka colour*/
 }
 
+.wrapper .sidebar .sidebar-header img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 0px;
+    }
+
+.glow-img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px; /* optional, for slightly rounded corners */
+    border: 3px solid rgba(0, 120, 255, 0.8);
+
+  /* Ambient glow effect */
+    box-shadow: 
+    0 0 25px rgba(0, 120, 255, 0.7),
+    0 0 50px rgba(0, 120, 255, 0.6),
+    0 0 75px rgba(0, 120, 255, 0.4);
+}
 
 .wrapper .sidebar,
 .wrapper .content {
@@ -127,7 +148,7 @@ a:focus {
     gap: 10px; /* Space between icons */
     flex-wrap: wrap; /* Wrap to next line on small screens */
     width: 100%; /* Full width for responsiveness */
-    padding: 10px 0; /* Adjust padding */
+    padding: 20px 0 0px; /* Adjust padding */
     text-align: center;
 }
 
@@ -162,7 +183,7 @@ a:focus {
 .logo .sitename {
     font-size: 24px;
     font-weight: bold;
-    color: rgb(32, 109, 8); /* White text */
+    color: rgba(0, 150, 255, 1); /* White text */
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -235,20 +256,6 @@ a:focus {
         display: block;
         width: 100%;
     }
-
-    .wrapper .sidebar .sidebar-header img {
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        border-radius: 50%; /* Make it circular */
-        border: 3px solid rgba(0, 120, 255, 0.8);
-        box-shadow: 0px 0px 15px rgba(0, 120, 255, 0.5);
-        display: block;
-        margin: 40px auto 0 auto;
-    }
-    
-
-
 
     .navbar-brand {
         display: none;
@@ -343,7 +350,7 @@ a:focus {
     }
 
     .logo {
-        padding: 8px; /* Smaller padding */
+        padding: 8px 0 0 0; /* Smaller padding */
     }
 
     .logo .sitename {
@@ -490,6 +497,7 @@ a:focus {
     width: 100%;
     margin-bottom: 30px;
     padding-bottom: 10px;
+    margin: left 120px; 
 }
 
 .content-header h2 {
@@ -497,7 +505,7 @@ a:focus {
     font-size: 35px;
     font-weight: 700;
     letter-spacing: 3px;
-    margin: 0;
+    margin: 0px 740px 0px 0px ;
 }
 
 /* education main box for mobile */
@@ -607,13 +615,15 @@ a:focus {
     color: #222222;
     background: #362502;
     transition: all .3s;
-    padding: 10px 20px;
+    padding: 15px 80px;
     border: 1px solid #030303;
     z-index: 200;
     display: inline-block;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
+    margin-left: 550px;
+    margin-top: 15px;
 }
 
 .about .btn {
@@ -681,19 +691,18 @@ a:focus {
 
 .centered-container {
     display: flex;
-    flex-direction: row; /* Align items in a row */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    width: 100%; /* Full width */
-    height: 100px; /* Adjust height as needed */
+    flex-direction: row; 
+    margin-left: 40px; 
+    width: 100%; 
+    height: 100px; 
+    margin-bottom: -40px;
 }
 
 .centered-text {
-    font-size: 2rem; /* Adjust text size */
-    font-weight: bold; /* Make text bold */
-    color: #333; /* Dark gray color */
-    text-transform: uppercase; /* Uppercase text */
-    letter-spacing: 2px; /* Spacing between letters */
+    font-size: 2rem;
+    font-weight: bold; 
+    color: #ffffff; 
+    letter-spacing: 2px; 
 }
 
 /* skill section */
@@ -928,7 +937,7 @@ a:focus {
 /**********************************/
 .education {
     position: relative;
-    padding: 60px 30px;
+    padding: 30px 30px;
     background: #222222;
     border-radius: 30px; 
     overflow: hidden; 
@@ -1019,7 +1028,7 @@ a:focus {
 /**********************************/
 .experience {
     position: relative;
-    padding: 60px 30px;
+    padding: 30px 30px;
     background: #222222;
     border-radius: 30px; 
     overflow: hidden; 
@@ -1123,7 +1132,7 @@ a:focus {
 /**********************************/
 .service {
     position: relative;
-    padding: 60px 30px 30px 30px;
+    padding: 30px 30px 30px 30px;
     background: #222222;
     border-radius: 30px; 
     overflow: hidden; 
@@ -1188,7 +1197,6 @@ a:focus {
 
 .portfolio .container {
     background-color: #222222;
-    color: #8892b0;
     padding: 2rem;
     line-height: 1.6;
     max-width: 1000px;
@@ -1197,132 +1205,92 @@ a:focus {
 
 .project-card {
     display: flex;
-    background-color: #222222;
-    color: #ccd6f6;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
     margin-bottom: 2rem;
     padding: 1.5rem;
     border-radius: 4px;
     transition: transform 0.2s ease;
 }
 
+.project-name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
 .project-card:hover {
     transform: translateY(-5px);
-    background-color: #3b3a3a;
+    box-shadow: 0 0 0 2px #0070f3, 0 0 20px rgba(0, 112, 243, 0.5);
 }
 
-
 .project-image {
-    flex: 0 0 200px;
-    margin-right: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin: 40px 20px 5px 20px;
+    border-radius: 60px;
 }
 
 .project-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    object-fit: cover;
-}
-
-.project-content {
-    flex: 1;
+    width: 100%; 
+    max-width: 350px; 
+    margin: 0 20px 20px 20px;
+    
 }
 
 .project-title {
     display: flex;
+    justify-content:flex-start;
     align-items: center;
-    margin-bottom: 0.75rem;
-}
-
-.project-title h3 {
-    color: #ffffff;
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-right: 0.5rem;
-}
-
-.project-title a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.project-description {
-    color: #ccd6f6;
-    margin-bottom: 1rem;
-}
-
-.project-meta {
-    display: flex;
-    align-items: center;
-    margin-top: 1rem;
-}
-
-.project-stars {
-    display: flex;
-    align-items: center;
-    margin-right: 1rem;
-}
-
-.project-stars i {
-    color: #ffffff;
-    margin-right: 0.25rem;
-}
-
-.project-downloads {
-    display: flex;
-    align-items: center;
-}
-
-.project-downloads i {
-    color: #ffffff;
-    margin-right: 0.25rem;
-}
-
-.project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 1rem;
-    gap: 0.5rem;
-}
-
-.tag {
-    background-color: rgba(100, 255, 218, 0.1);
-    color: #ffffff;
-    padding: 0.35rem 0.75rem;
-    border-radius: 3px;
-    font-size: 0.75rem;
-    font-weight: 500;
+    gap: 270px;
+    margin-left: 60px;
 }
 
 .external-link {
-    font-size: 1rem;
-    color: #ffffff;
+    color: #666666;
 }
-
 .external-link:hover {
     color: #0070f3;
-    transform: translateY(-5px);
 }
 
-/* read more button */
-.project-link {
-    display: inline-block;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: white; /* Default text color */
-    transition: color 0.3s ease-in-out; /* Smooth transition */
-    /* Centering the element */
+.tech-tags-container {
     display: flex;
-    justify-content: center; 
-    align-items: center;
-    width: 100%; /* Ensures it's centered in a container */
+    flex-wrap: wrap;
+    gap: 8px; 
 }
 
-/* Hover Effect */
-.project-link:hover {
-    color: #0070f3; /* Change text color on hover */
-    text-decoration: underline; /* Add underline effect */
+.tech-tag {
+    background-color:  #666666;
+    color: rgba(0, 0, 0, 0.575);
+    padding: 4px 8px;
+    border-radius: 9px;
+    font-size: 0.875rem;
+    font-weight: 600; 
+    margin-bottom: 10px;
+}
+
+.project-description ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.project-description li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-description li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #0070f3;
+        }
+        
+.project-description {
+    padding: 0;
 }
 
 
@@ -1363,6 +1331,14 @@ a:focus {
 /*********** blog CSS ***********/
 /**********************************/
 
+.comming-soon h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #666666;
+    margin-bottom: 4rem;
+}
+
+/*****
 .blog .container {
     background-color: #222222;
     color: #8892b0;
@@ -1372,9 +1348,16 @@ a:focus {
     margin: 0 auto;
 }
 
+.comming-soon h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 4rem;
+}
+
 .project-card {
     display: flex;
-    background-color: #222222;
+    background-color: rgba(0, 0, 0, 0.3);
     color: #ccd6f6;
     margin-bottom: 2rem;
     padding: 1.5rem;
@@ -1384,7 +1367,7 @@ a:focus {
 
 .project-card:hover {
     transform: translateY(-5px);
-    background-color: #3b3a3a;
+    box-shadow: 0 0 0 2px #0070f3, 0 0 20px rgba(0, 112, 243, 0.5);
 }
 
 
@@ -1480,27 +1463,28 @@ a:focus {
     transform: translateY(-5px);
 }
 
-/* read more button */
+/* read more button 
 .project-link {
     display: inline-block;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: white; /* Default text color */
-    transition: color 0.3s ease-in-out; /* Smooth transition */
-    padding-bottom: 60px; /* Add padding for better click area */
+    color: white; 
+    transition: color 0.3s ease-in-out; 
+    padding-bottom: 60px; 
     
 }
+    */
 
-/* Hover Effect */
+/*
 .project-link:hover {
-    color: #0070f3; /* Change text color on hover */
-    text-decoration: underline; /* Add underline effect */
+    color: #0070f3; 
+    text-decoration: underline; 
 }
 
 
-/* portfolio main box for mobile */
+
 @media (max-width: 768px) {
     .project-card {
         flex-direction: column;
@@ -1515,9 +1499,9 @@ a:focus {
         max-height: 200px;
         overflow: hidden;
     }
-}
+}  */
 
-/* portfolio main box for Smaller Screens (Below 480px) */
+/*
 @media (max-width: 480px) {
     .project-card {
         flex-direction: column;
@@ -1533,7 +1517,7 @@ a:focus {
         overflow: hidden;
     }
 }
-
+*/
 
 /**********************************/
 /*********** Review CSS ***********/
@@ -1829,5 +1813,3 @@ a:focus {
 .footer a:hover {
     color: #0070f3;
 }
-
-
