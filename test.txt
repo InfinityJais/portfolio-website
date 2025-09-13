@@ -1,0 +1,37 @@
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+        padding: 5%;
+        margin: 1px 1px 20px 1px;
+    }
+
+    .project-image {
+        flex: 0 0 auto;
+        margin-right: 0;
+        margin-bottom: 1rem;
+        max-height: 200px;
+        overflow: hidden;
+    }
+    
+    .project-image {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    margin: 12px;
+    border-radius: 0px;
+    }
+
+    .project-title {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 116px;
+    margin-left: 10px;
+    }
+
+    .project-image img {
+    width: 100%; 
+    max-width: 290px;
+}
+}
