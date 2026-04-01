@@ -1,576 +1,509 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Abhishek</title>
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Kumar | AI Engineer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <!-- FontAwesome for some standard icons if needed -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
+<body class="bg-primary text-slate-100 font-inter">
 
-        <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/slick/slick.css" rel="stylesheet">
-        <link href="lib/slick/slick-theme.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-
-    <body data-spy="scroll" data-target=".navbar" data-offset="51">
-        <div class="wrapper">
-            <div class="sidebar">
-                <div class="sidebar-header">
-                    <img src="img/profile.png" alt="Image" class="glow-img">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="#home" class="logo">
+                <i class="fa-solid fa-brain" style="color: var(--color-yellow); margin-right: 0.5rem;"></i>
+                <span class="font-outfit font-bold">Abhishek Kumar</span>
+            </a>
+            <div class="nav-ticker">
+                <span class="nav-ticker-label">CURRENTLY BUILDING</span>
+                <div class="nav-ticker-track">
+                    <span class="nav-ticker-item">VOICE AGENT AI</span>
+                    <span class="nav-ticker-item">FRAUD DETECTION UI</span>
+                    <span class="nav-ticker-item">VECTOR SEARCH RAG</span>
                 </div>
-                <div class="social-links text-center">
-                    <a href="https://www.linkedin.com/in/abhishekkumarbj/"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/InfinityJais"><i class="fab fa-github"></i></a>
-                    <a href="https://www.kaggle.com/abhishekjaiswar"><i class="fab fa-kaggle"></i></a>
-                    <a href="https://x.com/Abhishe03448047"><i class="fab fa-twitter"></i></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://drive.google.com/file/d/1LHic1-DiXr1BAbJtO7D2ScRjcb8i-RWt/view?usp=sharing"
+                        target="_blank" class="btn btn-outline" rel="noopener noreferrer">Resume</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section-padding">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="font-playfair display-title">
+                        <span class="gradient-text gradient-orange">Turning</span><br>
+                        <span class="gradient-text gradient-orange">Data into</span><br>
+                        <span class="gradient-text gradient-orange">Intelligent</span><br>
+                        <span class="gradient-text gradient-pink">AI Systems</span><br>
+                        <span class="gradient-text gradient-orange">with Precision</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        I build machine learning models and AI applications that <span
+                            class="text-yellow text-italic">solve real-world problems</span> and scale to production.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="https://drive.google.com/file/d/1LHic1-DiXr1BAbJtO7D2ScRjcb8i-RWt/view?usp=sharing"
+                            target="_blank" class="btn btn-primary" rel="noopener noreferrer">Download Resume <i
+                                class="fa-solid fa-download" style="margin-left:8px;"></i></a>
+                        <a href="#projects" class="btn btn-secondary">View Projects <i class="fa-solid fa-chevron-right"
+                                style="margin-left:8px;"></i></a>
+                    </div>
                 </div>
 
-                <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-                    <h1 class="sitename">Abhishek kumar</h1>
-                </a>
+                <div class="about-image-wrapper hero-visual">
+                    <div class="avatar-transparent">
+                        <img src="assets/abhishek.png" class="hero-avatar-img" alt="Abhishek Kumar Profile">
+                        <i class="fa-solid fa-user-tie fallback-avatar-icon"></i>
+                    </div>
+                </div>
+            </div>
 
-                <div class="sidebar-content">
-                    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-                        <a href="#" class="navbar-brand"></a>
-                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarCollapse">
-                            <ul class="nav navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#header">Home<i class="fa fa-home"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#about">About<i class="fa fa-address-card"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#experience">Experience<i class="fa fa-star"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#service">Service<i class="fa fa-tasks"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#portfolio">Projects<i class="fa fa-file-archive"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#blog">Blog<i class="fa fa-blog"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#contact">Contact<i class="fa fa-envelope"></i></a>
-                                </li>
+            <div class="hero-bottom-decoration">
+                <i class="fa-solid fa-star text-pink"></i>
+                <i class="fa-solid fa-compass text-yellow" style="margin: 0 1rem; font-size: 1.25rem;"></i>
+                <i class="fa-solid fa-star text-pink"></i>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding bg-darker">
+            <div class="container about-container">
+                <div class="about-video-wrapper"
+                    style="position: relative; width: 100%; border-radius: 8px; overflow: hidden; border: 2px solid rgba(252, 211, 77, 0.4); background-color: #000; box-shadow: 0 10px 30px rgba(0,0,0,0.5); transition: border-color 0.3s;"
+                    onmouseover="this.style.borderColor='#fcd34d'"
+                    onmouseout="this.style.borderColor='rgba(252, 211, 77, 0.4)'">
+                    <div style="padding-bottom: 56.25%; position: relative;">
+                        <!-- Introduction Video (16:9 Aspect Ratio) -->
+                        <iframe src="https://www.youtube.com/embed/Hy6lUa30AfU" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 4px;">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <h2 class="section-title">The Architect & <br>The Algorithm</h2>
+                    <p class="about-text">
+                        I build intelligent AI systems that solve real-world problems using machine learning and
+                        Generative AI.
+
+                        My work focuses on designing end to end solutions from data processing and model development
+                        to deploying scalable APIs using FastAPI and Docker.
+
+                        I specialize in LLM applications, RAG pipelines, and vector search systems, combining
+                        mathematical thinking with practical engineering to create production ready AI solutions.
+
+
+                    </p>
+                    <p class="about-text">
+                        Currently pursuing a Master's in Mathematics at Mumbai University, with a strong foundation in
+                        statistics, problem solving, and analytical thinking.
+
+                    </p>
+                    <div class="badge-group">
+                        <span class="info-badge font-outfit"><i class="fa-solid fa-brain"
+                                style="color:var(--color-yellow)"></i> AI ENGINEER</span>
+                        <span class="info-badge font-outfit"><i class="fa-solid fa-magnifying-glass"
+                                style="color:var(--color-pink)"></i> ANALYST</span>
+                        <span class="info-badge font-outfit"><i class="fa-solid fa-lightbulb"
+                                style="color:var(--color-cyan)"></i> PROBLEM SOLVER</span>
+                    </div>
+                    <a href="#experience" class="btn btn-outline" style="margin-top: 2rem;">Read Full Narrative <i
+                            class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i></a>
+                </div>
+            </div>
+
+            <!-- Skills Mandala Tree -->
+            <div class="container skills-container" style="margin-top: 6rem; text-align: center;">
+                <h3 class="skills-title">Skills Tree</h3>
+                <p class="skills-subtitle">A radial convergence of technical expertise</p>
+
+                <div class="skills-tree">
+                    <div class="skills-center">
+                        <i class="fa-solid fa-atom"></i>
+                        <span>AI CORE</span>
+                        <small>Foundations</small>
+                    </div>
+                    <div class="skill-node node-top">
+                        <div class="node-icon bg-pink"><i class="fa-solid fa-network-wired"></i></div>
+                        <h4>GenAI</h4>
+                        <p>LLM, LangGraph, CrewAI</p>
+                    </div>
+                    <div class="skill-node node-right">
+                        <div class="node-icon bg-yellow"><i class="fa-solid fa-code"></i></div>
+                        <h4>Programming</h4>
+                        <p>Python</p>
+                    </div>
+                    <div class="skill-node node-bottom-right">
+                        <div class="node-icon bg-cyan"><i class="fa-solid fa-eye"></i></div>
+                        <h4>AI/ML</h4>
+                        <p>Computer Vision & NLP</p>
+                    </div>
+                    <div class="skill-node node-bottom">
+                        <div class="node-icon bg-gray"><i class="fa-solid fa-server"></i></div>
+                        <h4>MLOps</h4>
+                        <p>Docker, AWS, GitHub, GitHub Action, DVC</p>
+                    </div>
+                    <div class="skill-node node-bottom-left">
+                        <div class="node-icon bg-cyan"><i class="fa-solid fa-database"></i></div>
+                        <h4>Database</h4>
+                        <p>SQL</p>
+                    </div>
+                    <div class="skill-node node-left">
+                        <div class="node-icon bg-pink"><i class="fa-solid fa-chart-line"></i></div>
+                        <h4>Data Science</h4>
+                        <p>EDA, Pandas, NumPy, Scikit-learn, XGBoost</p>
+                    </div>
+                    <svg class="skills-connections" width="100%" height="100%"
+                        style="position:absolute; top:0; left:0; z-index:0; pointer-events:none;">
+                        <!-- Connections drawn via JS or CSS based on layout -->
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Journey (Experience) -->
+        <section id="experience" class="experience section-padding">
+            <div class="container">
+                <h2 class="section-title section-title-line">
+                    <span class="line-decorator"></span> PROFESSIONAL JOURNEY
+                </h2>
+
+                <div class="timeline">
+
+                    <div class="timeline-item left">
+                        <div class="timeline-dot bg-yellow"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date font-outfit text-pink">CURRENT</span>
+                            <h3 class="timeline-title font-outfit">Self-Driven</h3>
+                            <h4 class="timeline-company text-yellow">Machine Learning & AI Projects</h4>
+                            <ul class="timeline-tasks">
+                                <li>Built 4 major end-to-end projects including ML models and Generative AI</li>
+                                <li>Completed 5+ minor projects focused on data analysis, visualization, and model
+                                    experimentation.</li>
+                                <li>Worked with datasets of 20,000+ records, performing data cleaning, feature
+                                    engineering, and analysis.</li>
                             </ul>
                         </div>
-                    </nav>
+                    </div>
+
+                    <div class="timeline-item right">
+                        <div class="timeline-dot bg-yellow"><i class="fa-solid fa-briefcase"></i></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date font-outfit text-pink">PAST</span>
+                            <h3 class="timeline-title font-outfit">Co-Founder & Tech Lead</h3>
+                            <h4 class="timeline-company text-yellow">JAIS INFOTECH, Mumbai</h4>
+                            <ul class="timeline-tasks">
+                                <li>Delivered web development, IT services, and basic networking setups for individual
+                                    and small business clients.</li>
+                                <li>Managed company finances and marketing strategies alongside core technical duties.
+                                </li>
+                                <li>Resolved hardware repairs and complex software troubleshooting.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left">
+                        <div class="timeline-dot bg-yellow"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date font-outfit text-pink">PAST</span>
+                            <h3 class="timeline-title font-outfit">Mathematics & Science Tutor</h3>
+                            <h4 class="timeline-company text-yellow">Home Tutoring, Mumbai</h4>
+                            <ul class="timeline-tasks">
+                                <li>Taught complex topics to SSC, HSC, and lower-level students.</li>
+                                <li>Maintained a 100% passing rate with significant grade improvements.</li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
-                
             </div>
-            <div class="content">
-                <!-- Header Start -->
-                <div class="header" id="header">
-                    <div class="content-inner">
-                        <h2></h2>
-                        <div class="typed-text">Data Science enthusiast, Learner</div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="experience section-padding">
+            <div class="container">
+                <h2 class="section-title section-title-line">
+                    <span class="line-decorator"></span> EDUCATION
+                </h2>
+
+                <div class="timeline">
+
+                    <div class="timeline-item left">
+                        <div class="timeline-dot bg-yellow"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date font-outfit text-pink">CURRENT PENDING</span>
+                            <h3 class="timeline-title font-outfit">Master of Science (M.Sc.) in Mathematics</h3>
+                            <h4 class="timeline-company text-yellow">Mumbai University</h4>
+                            <ul class="timeline-tasks">
+                                <li>Focusing on advanced mathematics, statistics, and problem-solving.</li>
+                                <li>Applying theoretical models to modern data science and programming.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right">
+                        <div class="timeline-dot bg-yellow"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date font-outfit text-pink">COMPLETED</span>
+                            <h3 class="timeline-title font-outfit">Bachelor of Science (B.Sc.) in Mathematics</h3>
+                            <h4 class="timeline-company text-yellow">Mumbai University</h4>
+                            <ul class="timeline-tasks">
+                                <li>Built a strong foundation in algebra, calculus, and statistics.</li>
+                                <li>Developed analytical thinking and logical reasoning for real-world scenarios.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="projects section-padding bg-darker">
+            <div class="container">
+                <h2 class="section-title section-title-line">
+                    <span class="line-decorator"></span> FEATURED AI PROJECTS
+                </h2>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-header bg-yellow text-dark">
+                            <h4 class="font-outfit font-bold">LOAN ELIGIBILITY PREDICTOR</h4>
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                        <div class="project-image-placeholder p-gradient-1">
+                            <img src="assets/cra1.png" alt="Loan Eligibility Predictor" class="project-img">
+                        </div>
+                        <div class="project-body">
+                            <p class="project-desc">
+                                Machine learning model to predict loan eligibility for bank customers using real-world
+                                data, trained via Decision Trees and Random Forests.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">FASTAPI</span>
+                                <span class="tag">SCIKIT-LEARN</span>
+                                <span class="tag">DOCKER</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/InfinityJais/credit_risk_model" target="_blank"
+                                    rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GITHUB</a>
+                                <a href="https://credit-leanding.netlify.app/" target="_blank"
+                                    rel="noopener noreferrer"><i class="fa-solid fa-external-link"></i> LIVE DEMO</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-header bg-orange text-dark">
+                            <h4 class="font-outfit font-bold">YOUTUBE CHATBOT RAG</h4>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <div class="project-image-placeholder p-gradient-2">
+                            <img src="assets/rag2.png" alt="YouTube Chatbot RAG" class="project-img">
+                        </div>
+                        <div class="project-body">
+                            <p class="project-desc">
+                                End-to-end Chatbot using OpenAI Whisper for transcription and Pinecone vector DB. Users
+                                enter a link and chat with the video.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">LANGCHAIN</span>
+                                <span class="tag">PINECONE</span>
+                                <span class="tag">WHISPER</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/InfinityJais/youtube-chatbot-rag" target="_blank"
+                                    rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GITHUB</a>
+                                <a href="https://youtube-chatbot-rag.netlify.app/" target="_blank"
+                                    rel="noopener noreferrer"><i class="fa-solid fa-external-link"></i> LIVE DEMO</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-header bg-yellow text-dark">
+                            <h4 class="font-outfit font-bold">METROPLUSE ANALYTICS</h4>
+                            <i class="fa-solid fa-city"></i>
+                        </div>
+                        <div class="project-image-placeholder p-gradient-3">
+                            <img src="assets/metro1.png" alt="MetroPluse Analytics" class="project-img">
+                        </div>
+                        <div class="project-body">
+                            <p class="project-desc">
+                                Real estate investment analytics system identifying high-potential micro-markets by
+                                analyzing rental yield, appreciation, and risk.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">POWER BI</span>
+                                <span class="tag">PYTHON</span>
+                                <span class="tag">HDBSCAN</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/InfinityJais/metroplusedashboard" target="_blank"
+                                    rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GITHUB</a>
+                                <a href="https://metropluse.netlify.app/" target="_blank" rel="noopener noreferrer"><i
+                                        class="fa-solid fa-external-link"></i> LIVE DEMO</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <div class="project-header bg-yellow text-dark">
+                            <h4 class="font-outfit font-bold">MOVIE RECOMMENDER</h4>
+                            <i class="fa-solid fa-film"></i>
+                        </div>
+                        <div class="project-image-placeholder p-gradient-4">
+                            <img src="assets/msr4.png" alt="Movie Recommender System" class="project-img">
+                        </div>
+                        <div class="project-body">
+                            <p class="project-desc">
+                                Similarity-based recommendation model using metadata from TMDB. Containerized API built
+                                with FastAPI and frontend UI.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">PYTHON</span>
+                                <span class="tag">DOCKER</span>
+                                <span class="tag">FASTAPI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/InfinityJais/movie-recomender-app-project" target="_blank"
+                                    rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GITHUB</a>
+                                <a href="https://infinityjais.github.io/movie-recomender-app/" target="_blank"
+                                    rel="noopener noreferrer"><i class="fa-solid fa-external-link"></i> LIVE DEMO</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card">
+                        <div class="project-header bg-orange text-dark">
+                            <h4 class="font-outfit font-bold">Sentinel X</h4>
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="project-image-placeholder p-gradient-4">
+                            <div class="glow-orb"></div>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-desc">
+                                automated fraud detection system that engineers 1M+ synthetic bank transactions, injects
+                                real-world money laundering patterns like muling and smurfing, and exposes them through
+                                a forensic Tableau dashboard
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">CURRENTLY WORKING ON IT</span>
+                                <span class="tag">PYTHON</span>
+                                <span class="tag">TABLEAU</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/InfinityJais/Sentinel-X" target="_blank"
+                                    rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GITHUB</a>
+                                <a href="https://github.com/InfinityJais/Sentinel-X" target="_blank"
+                                    rel="noopener noreferrer"><i class="fa-solid fa-external-link"></i> LIVE DEMO</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="project-card">
+                        <div class="project-header bg-yellow text-dark">
+                            <h4 class="font-outfit font-bold">Voice Agent</h4>
+                            <i class="fa-solid fa-microphone"></i>
+                        </div>
+                        <div class="project-image-placeholder p-gradient-4">
+                            <div class="glow-orb"></div>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-desc">
+                                apointment booking system for any B2B or B2C service provider in real time with diffrent
+                                indian languages.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">CURRENTLY WORKING ON IT</span>
+                                <span class="tag">PYTHON</span>
+                                <span class="tag">DOCKER</span>
+                                <span class="tag">FASTAPI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" rel="noopener noreferrer"><i
+                                        class="fa-brands fa-github"></i> GITHUB</a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"><i
+                                        class="fa-solid fa-external-link"></i> LIVE DEMO</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact section-padding">
+            <div class="container" style="text-align: center;">
+                <div class="contact-card">
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-sun text-yellow icon-spin" style="font-size: 2rem;"></i>
+                    </div>
+                    <h2 class="font-outfit font-bold letter-spaced"
+                        style="margin: 1.5rem 0 0.5rem; color: var(--color-yellow);">ABHISHEK KUMAR</h2>
+
+                    <div class="contact-links" style="display: flex; justify-content: center; gap: 2rem;">
+                        <a href="mailto:abhishekbjaiswar@gmail.com" class="text-yellow hover-white"><i
+                                class="fa-solid fa-envelope"></i> abhishekbjaiswar@gmail.com</a>
+                        <a href="tel:+917039733292" class="text-yellow hover-white"><i class="fa-solid fa-phone"></i>
+                            +91 70397 33292</a>
                     </div>
                 </div>
-                <!-- Header End -->
+            </div>
+        </section>
 
-                <!-- About Start -->
-                <div class="about" id="about">
-                    <div class="content-inner">
-                        <div class="content-header">
-                            <h2>About Me</h2>
-                        </div>
-                        <div class="about">
-                            <div class="row align-items-center">
-                                <!-- Video Section -->
-                                <div class="col-md-6">
-                                    <div class="video-container">
-                                        <iframe 
-                                            class="embed-responsive-item" 
-                                            src="https://www.youtube.com/embed/Hy6lUa30AfU" 
-                                            frameborder="0" 
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                            allowfullscreen>
-                                        </iframe>
-                                    </div>
-                                </div>
-                                <!-- Text and Resume Button -->
-                                <div class="col-md-6">
-                                    <p>
-                                        I am Abhishek Kumar, currently learning Data Science to enhance my analytical and machine learning skills. I have completed my Master’s in Mathematics, which gives me a strong foundation in problem-solving, statistics, and logical thinking. My passion lies in working with data, uncovering insights, and building intelligent solutions. I am eager to explore the fields of data analysis, machine learning, and AI to solve real-world challenges.
-                                    </p>                                    
-                                </div>
-                                <div class="download">
-                                    <a class="btn" href="https://drive.google.com/file/d/1LHic1-DiXr1BAbJtO7D2ScRjcb8i-RWt/view?usp=sharing" target="_blank">
-                                    <i class="fa fa-download"></i> Resume
-                                    </a>                                    
-                                </div>
-                            </div> 
-                        </div>
-                        
-                        </div>
-                        <div class="row">
-                            <div class="centered-container">
-                                <h1 class="centered-text">SKILLS</h1>
-                            </div>
-                            <div class="tech-grid">
-                                <div class="tech-card active">
-                                    <div class="tech-icon icon-python"></div>
-                                    <div class="tech-name">Python</div>
-                                </div>
-                                <div class="tech-card">
-                                    <div class="tech-icon icon-numpy"></div>
-                                    <div class="tech-name">NumPy</div>
-                                </div>
-                                <div class="tech-card">
-                                    <div class="tech-icon icon-pandas"></div>
-                                    <div class="tech-name">Pandas</div>
-                                </div>
-                                <div class="tech-card">
-                                    <div class="tech-icon icon-matplot"></div>
-                                    <div class="tech-name">Matplotlib</div>
-                                </div>
-                                <div class="tech-card">
-                                    <div class="tech-icon icon-sns"></div>
-                                    <div class="tech-name">FastAPI</div>
-                                </div>
-                                <div class="tech-card">
-                                    <div class="tech-icon icon-sklearn"></div>
-                                    <div class="tech-name">sk learn</div>
-                                </div>
-                                <div class="tech-card">
-                                    <div class="tech-icon icon-pytorch"></div>
-                                    <div class="tech-name">AWS</div>
-                                </div>
-                                <div class="tech-card">
-                                    <div class="tech-icon icon-mysql"></div>
-                                    <div class="tech-name">MySQL</div>
-                                </div>
-                                <div class="tech-card">
-                                    <div class="tech-icon icon-mongodb"></div>
-                                    <div class="tech-name">CrewAI</div>
-                                </div>
-                                <div class="tech-card">
-                                    <div class="tech-icon icon-docker"></div>
-                                    <div class="tech-name">docker</div>
-                                </div>
-                                <div class="tech-card">
-                                    <div class="tech-icon icon-tenser"></div>
-                                    <div class="tech-name">LangChain</div>
-                                </div>
-                                <div class="tech-card">
-                                    <div class="tech-icon icon-tex"></div>
-                                    <div class="tech-name">LeTex</div>
-                                </div>
-                            </div>   
-                        </div>
-                    </div>
-                <!-- About End -->
+    </main>
 
-                                <div class="portfolio" id="portfolio">
-                    
-                    <div class="container">
-                        <div class="content-header">
-                            <h2>Project</h2>
-                        </div>
-
-                        <!-- Project 0 -->
-
-                        <div class="project-card">
-                            <div class="project-name">Credit Risk Analysit</div>
-                            <div class="project-image">
-                                <img src="/img/cra1.png" alt="Credit Risk Analysit">
-                                <img src="/img/cra2.png" alt="Credit Risk Analysit">
-                                <img src="/img/cra3.png" alt="Credit Risk Analysit">
-                            </div>
-                            <div class="project-content">
-                                <div class="project-title">
-                                    <a href="https://credit-leanding.netlify.app/"  class="external-link" target="_blank" rel="noopener noreferrer">Live Project <i class="fas fa-external-link-alt"></i></a>
-                                    <a href="https://github.com/InfinityJais/credit_risk_model" class="external-link">Github <i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                                <div class="project-description">
-                                    <ul>
-                                    <div class="tech-tags-container">
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">scikit-learn</span>
-                                    <span class="tech-tag">NumPy</span>
-                                    <span class="tech-tag">Pandas</span>
-                                    <span class="tech-tag">Random Forest</span>
-                                    <span class="tech-tag">Decision Tree</span>
-                                    <span class="tech-tag">FastAPI</span>
-                                    <span class="tech-tag">AWS</span>
-                                    <span class="tech-tag">MLOps</span>
-                                    <span class="tech-tag">Docker</span>
-
-                                </div>
-                                    <ul>
-                                        <li>
-                                            Developed a <strong>machine learning model</strong> to predict <strong>loan eligibility</strong> for bank customers
-                                            using a real-world dataset.
-                                        </li>
-                                        <li>
-                                            Performed <strong>data cleaning, preprocessing, and feature engineering</strong> to improve model accuracy
-                                            and interpretability.
-                                        </li>
-                                        <li>
-                                            Deployed an interactive <strong>web application</strong> using <strong>FastAPI</strong> and <strong>Docker</strong>
-                                            for customer prediction and demonstration.
-                                        </li>
-                                        <li>
-                                            <strong>Tools &amp; Technologies:</strong> Python, Pandas, Scikit-learn, Decision Tree,
-                                            Random Forest, FastAPI, Docker, HTML/CSS/JavaScript.
-                                        </li>
-                                    </ul>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                        <!-- Project 2 -->
-                        <div class="project-card">
-                            <div class="project-name">YouTube RAG Chatbot</div>
-                            <div class="project-image">
-                                <img src="/img/rag1.png" alt="RAG Chatbot">
-                                <img src="/img/rag2.png" alt="RAG Chatbot Q&A">
-                                <img src="/img/rag3.png" alt="RAG Chatbot Conversation">
-                            </div>
-                            <div class="project-content">
-                                <div class="project-title">
-                                    <a href="https://youtube-chatbot-rag.netlify.app/" class="external-link">Live Project <i class="fas fa-external-link-alt"></i></a>
-                                    <a href="https://github.com/InfinityJais/youtube-chatbot-rag" class="external-link">Github <i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                                <div class="project-description">
-                                    <ul>
-                                    <div class="tech-tags-container">
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">LangChain</span>
-                                    <span class="tech-tag">Pinecone</span>
-                                    <span class="tech-tag">OpenAI Whisper</span>
-                                    <span class="tech-tag">OpenAI Embeddings</span>
-                                    <span class="tech-tag">FFmpeg</span>
-                                    <span class="tech-tag"> yt-dlp</span>
-                                    <span class="tech-tag">FastAPI</span>
-                                    <span class="tech-tag">Pydantic</span>
-                                    <span class="tech-tag">HTML</span>
-                                </div>
-                                    <p><strong>What it does:</strong> Users enter a YouTube video link, the video is processed,and then users can <strong>chat related to the YouTube video</strong>.</p>
-                                    <li>Developed an end-to-end <strong>YouTube Chatbot</strong> using <strong>OpenAI Whisper</strong> for audio transcription,embedding models for semantic search, and <strong>Pinecone</strong> vector database for efficient retrieval.</li>
-                                    <li>Implemented <strong>question-answering functionality</strong> with good accuracy.</li>
-                                    <li>Built and deployed the application using <strong>FastAPI</strong> and hosted it on a local computer,enabling seamless access via a web interface.</li>
-                                    <li><strong>Tools &amp; Technologies:</strong> Python, LangChain, Pinecone, OpenAI Whisper,OpenAI Embeddings, FastAPI, FFmpeg, yt-dlp.</li></ul>
-                                    </ul>
-                            </div>
-                        </div> 
-                    </div>       
-
-
-                        <div class="project-card">
-                            <div class="project-name">MetroPluse</div>
-                            <div class="project-image">
-                                <img src="/img/metro1.png" alt="MetroPluse dashboard">
-                                <img src="/img/metro2.png" alt="MetroPluse dashboard">
-                                <img src="/img/metro3.png" alt="MetroPluse dashboard">
-                            </div>
-                            <div class="project-content">
-                                <div class="project-title">
-                                    <a href="https://metropluse.netlify.app/" class="external-link">Live Project <i class="fas fa-external-link-alt"></i></a    >
-                                    <a href="https://github.com/InfinityJais/metroplusedashboard" class="external-link">Github <i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                                <div class="project-description">
-                                    <ul>
-                                    <div class="tech-tags-container">
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">scikit-learn</span>
-                                    <span class="tech-tag">NumPy</span>
-                                    <span class="tech-tag">Pandas</span>
-                                    <span class="tech-tag">Matplotlib</span>
-                                    <span class="tech-tag">PowerBI</span>
-                                </div>
-                                    <p><strong>What it does:</strong> Provides real estate investment insights through interactive dashboards.</p>
-
-                                        <li>
-                                            Designed and built an <strong>end-to-end real estate investment analytics system</strong> to identify
-                                            <strong>high-potential micro-markets</strong> by analyzing rental yield, capital appreciation,
-                                            infrastructure strength, liquidity, and risk.
-                                        </li>
-                                        <li>
-                                            Performed extensive <strong>data preparation, feature engineering, and business-driven scoring</strong>
-                                            to create an <strong>explainable investment score</strong>, validated through backtesting against future
-                                            price growth.
-                                        </li>
-                                        <li>
-                                            Developed <strong>interactive dashboards</strong> using <strong>Power BI</strong>
-                                            to visualize KPIs, market rankings, risk-return profiles, and confidence-based insights for stakeholders.
-                                        </li>
-                                        <li>
-                                            <strong>Tools &amp; Technologies:</strong> Python, Pandas, NumPy, Scikit-learn, HDBSCAN,
-                                            Matplotlib, Power BI.
-                                        </li>
-                                    </ul>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                        <div class="project-card">
-                            <div class="project-name">Movie Recommender System</div>
-                            <div class="project-image">
-                                <img src="/img/mrs1.png" alt="Movie Recommender System">
-                                <img src="/img/msr4.png" alt="Movie Recommender System">
-                                <img src="/img/msr5.png" alt="Movie Recommender System">
-                            </div>
-                            <div class="project-content">
-                                <div class="project-title">
-                                    <a href="https://infinityjais.github.io/movie-recomender-app/" class="external-link">Live Project <i class="fas fa-external-link-alt"></i></a>
-                                    <a href="https://github.com/InfinityJais/movie-recomender-app-project" class="external-link">Github <i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                                <div class="project-description">
-                                    <ul>
-                                    <div class="tech-tags-container">
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">scikit-learn</span>
-                                    <span class="tech-tag">NumPy</span>
-                                    <span class="tech-tag">Pandas</span>
-                                    <span class="tech-tag">Matplotlib</span>
-                                    <span class="tech-tag">BeautifulSoup</span>
-                                    <span class="tech-tag">FastAPI</span>
-                                    <span class="tech-tag">Pydantic</span>
-                                    <span class="tech-tag">HTML</span>
-                                    <span class="tech-tag">Docker</span>
-                                    <span class="tech-tag">Render</span>
-                                </div>
-                                    <p><strong>What it does:</strong> Users enter a movie name and the app returns the <strong>top 5 similar movies</strong></p>
-                                    <li>Collected and cleaned movie metadata from <strong>TMDB</strong>; performed preprocessing and exploratory analysis using <strong>NumPy, Pandas, Matplotlib</strong></li>
-                                    <li>Built a <strong>similarity-based recommendation model</strong> in <strong>scikit-learn</strong> (vectorization + similarity scoring) to rank top-5 results</li>
-                                    <li>Exposed predictions via a <strong>FastAPI</strong> service with <strong>Pydantic</strong> schemas; containerized with <strong>Docker</strong> and deployed on <strong>Render</strong></li>
-                                    <li>Developed a lightweight <strong>HTML/CSS/JS</strong> frontend to query the API and display recommendations</li>
-                                    </ul>
-                            </div>
-                        </div>
-                    </div>
-                        
-
-                
-                        
-                <!-- Portfolio End -->
-                
-                <!-- blog Start -->
-                <div class="blog" id="blog">
-
+    <footer class="footer bg-darker">
+        <div class="container footer-content">
+            <p class="text-slate-400">© 2026 Abhishek Kumar. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/InfinityJais">GITHUB</a>
+                <a href="https://www.linkedin.com/in/abhishekj2000/">LINKEDIN</a>
+                <a href="https://www.kaggle.com/abhishekjaiswar">KAGGLE</a>
             </div>
         </div>
-    </div>
-                
-                <!-- Education Start -->
-                <div class="education" id="education">
-                    <div class="content-inner">
-                        <div class="content-header">
-                            <h2>Education</h2>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col-12">
-                                <div class="edu-col">
-                                    <span>01-Jan-2022 <i>to</i> Expected-2026</span>
-                                    <h3>Master of Science (M.Sc.) in Mathematics</h3>
-                                    <p>I am currently pursuing my Master’s degree in Mathematics from Mumbai University, focusing on advanced mathematics, statistics, and problem-solving, with applications in data science and programming.</p>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="edu-col">
-                                    <span>01-Jun-2020 <i>to</i> 31-june-2022</span>
-                                    <h3>Bachelor of Science (B.Sc.) in Mathematics</h3>
-                                    <p>I have completed my Bachelor’s degree in Mathematics from Mumbai University, Built a strong foundation in algebra, calculus, and statistics, developing analytical thinking and logical reasoning for real-world problem-solving.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Education Start -->
-                
-                <!-- Experience Start -->
-                <div class="experience" id="experience">
-                    <div class="content-inner">
-                        <div class="content-header">
-                            <h2>Experience</h2>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col-12">
-                                <div class="exp-col">
-                                    <span>23-Sep-2023 <i>to</i> Present </span>
-                                    <h3>JAIS INFOTECH</h3>
-                                    <h4>Mumbai, IN</h4>
-                                    <h5>Co-Founder</h5>
-                                    <p>Delivered web development, IT services, hardware repairs (laptops, printers, CPUs), basic networking setups, and software troubleshooting for individual and small business clients, while also managing company finances and marketing. </p>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="exp-col">
-                                    <span>01-Mar-2022 <i>to</i> 10-june-2023</span>
-                                    <h3>Home Tutoring</h3>
-                                    <h4>Mumbai, IN</h4>
-                                    <h5>Teaching</h5>
-                                    <p>I have experience teaching Mathematics and Science to SSC, HSC, and lower-level students, and my efforts consistently resulted in a 100% passing rate, with many students achieving significant grade improvements.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Experience Start -->
-                
-                <!-- Service Start -->
-                <div class="service" id="service">
-                    <div class="content-inner">
-                        <div class="content-header">
-                            <h2>Service</h2>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col-12">
-                                <div class="srv-col">
-                                    <i class="fa fa-desktop"></i>
-                                    <h3>Computer repair and mantainces</h3>
-                                    <p>Repair all types of laptop and desktop. Fixing hardware and software issues, system optimization, and troubleshooting. </p>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="srv-col">
-                                    <i class="fa fa-search"></i>
-                                    <h3>Basic Video Editing</h3>
-                                    <p>Trimming, adding effects, transitions, and improving video quality.</p>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="srv-col">
-                                    <i class="fa fa-envelope-open-text"></i>
-                                    <h3>Tutoring (Maths & Programming)</h3>
-                                    <p>Teaching Mathematics and Science in a simple and effective way.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Service Start -->
-                
-                <!-- Portfolio Start -->
-                <div class="portfolio" id="portfolio">
-                    
-                    <div class="container">
-                        
-                        </div>
+    </footer>
 
-                        <!-- Project 0 -->
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+</body>
 
-                        
-                        
-
-                
-                        
-                <!-- Portfolio End -->
-                
-                <!-- blog Start -->
-                <div class="blog" id="blog">
-                    <div class="container">
-                        <div class="content-header">
-                            <h2>Blogs</h2>
-                        </div>
-                        <div class="comming-soon"><h2>Blogs comming soon... :) </h2></div>
-                        <!-- Article 1 -->
-                        <!--
-                        <div class="project-card">
-                            <div class="project-image">
-                                <img src="img/blog.png" alt="Halcyon Theme">
-                            </div>
-                            <div class="project-content">
-                                <div class="project-title">
-                                    <h3>Machine Learning: The Future of Smart Technology</h3>
-                                    <a href="#" class="external-link"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                                <div class="project-description">
-                                    <p>Machine Learning is shaping the future with smart algorithms that learn from data. From AI assistants to self-driving cars, ML is making technology smarter and more efficient.</p>
-                                </div>
-                                <div class="article-year">26 jan 2024</div>
-                            </div>
-                        </div>
-                        -->
-                <!-- blog End -->
-                
-                <!-- Contact Start -->
-                <div class="contact" id="contact">
-                    <div class="content-inner">
-                        <div class="content-header">
-                            <h2>Contact</h2>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <div class="contact-info">
-                                    <p><i class="fa fa-user"></i>Abhishk Kumar</p>
-                                    <p><i class="fa fa-tag"></i>Data Science enthusiast</p>
-                                    <p><i class="fa fa-envelope"></i><a href="mailto:abhishekbjaiswar@gmail.com">abhishekbjaiswar@gmail.com</a></p>
-                                    <p><i class="fa fa-phone"></i><a href="tel:+91 70397 33292">+91 70397 33292</a></p>
-                                    <p><i class="fa fa-map-marker"></i>Mumbai, Maharashtra India</p>
-                                    <div class="social">
-                                        <a class="btn" href="https://x.com/Abhishe03448047"><i class="fab fa-twitter"></i></a>
-                                        <a class="btn" href="https://www.kaggle.com/abhishekjaiswar"><i class="fab fa-kaggle"></i></a>
-                                        <a class="btn" href="https://www.linkedin.com/in/abhishekkumarbj/"><i class="fab fa-linkedin-in"></i></a>
-                                        <a class="btn" href="https://github.com/InfinityJais"><i class="fab fa-github"></i></a>
-                                        <a class="btn" href="https://www.youtube.com/@abhishek_jaiswar"><i class="fab fa-youtube"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="project-image">
-                                        <div class="tech-icon icon-left-dirction">
-                                            <img src="img/left-dir.png" alt="contact">
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Contact End -->
-                
-                <!-- Footer Start -->
-                <div class="footer">
-                    <div class="content-inner">
-                        <div class="row align-items-center">
-                            <div>
-                                <p>&copy; Copyright <a href="abhishekbjaiswar@gmail.com">Abhishek Kumar</a>. All Rights Reserved</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Footer Start -->
-            </div>
-        </div>
-    </div>
-        <!-- Back to Top -->
-        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/slick/slick.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-
-        
-    </body>
 </html>

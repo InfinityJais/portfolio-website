@@ -1,0 +1,359 @@
+/* =========================================================================
+   Global Variables & Design System
+   ========================================================================= */
+:root {
+    /* Colors */
+    --color-primary-bg: #0b1120;
+    /* Deep Midnight Blue */
+    --color-darker-bg: #070a13;
+    --color-card-bg: rgba(17, 24, 39, 0.7);
+    --color-card-hover: rgba(30, 41, 59, 0.9);
+
+    --color-text-main: #f8fafc;
+    --color-text-muted: #94a3b8;
+
+    --color-yellow: #fcd34d;
+    /* Golden Yellow */
+    --color-yellow-hover: #fbbf24;
+    --color-orange: #fb923c;
+    --color-pink: #ec4899;
+    --color-cyan: #22d3ee;
+
+    /* Typography */
+    --font-inter: 'Inter', sans-serif;
+    --font-playfair: 'Playfair Display', serif;
+    --font-outfit: 'Outfit', sans-serif;
+
+    /* Spacing */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}
+
+/* =========================================================================
+   Reset & Base Styles
+   ========================================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-primary-bg);
+    color: var(--color-text-main);
+    font-family: var(--font-inter);
+    line-height: 1.6;
+    overflow-x: hidden;
+    position: relative;
+    /* subtle pattern overlay */
+    background-image: radial-gradient(var(--color-darker-bg) 2px, transparent 2px);
+    background-size: 32px 32px;
+}
+
+/* Typography Utility Classes */
+.font-inter {
+    font-family: var(--font-inter);
+}
+
+.font-playfair {
+    font-family: var(--font-playfair);
+}
+
+.font-outfit {
+    font-family: var(--font-outfit);
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-yellow {
+    color: var(--color-yellow);
+}
+
+.text-orange {
+    color: var(--color-orange);
+}
+
+.text-pink {
+    color: var(--color-pink);
+}
+
+.text-cyan {
+    color: var(--color-cyan);
+}
+
+.text-dark {
+    color: #000;
+}
+
+.text-slate-400 {
+    color: var(--color-text-muted);
+}
+
+.bg-darker {
+    background-color: var(--color-darker-bg);
+}
+
+.bg-yellow {
+    background-color: var(--color-yellow);
+}
+
+.bg-orange {
+    background-color: var(--color-orange);
+}
+
+.bg-pink {
+    background-color: var(--color-pink);
+}
+
+.bg-cyan {
+    background-color: var(--color-cyan);
+}
+
+.bg-gray {
+    background-color: #64748b;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: var(--transition-normal);
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.section-padding {
+    padding: 1rem 0;
+}
+
+/* =========================================================================
+   Gradients & Effects
+   ========================================================================= */
+.gradient-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.gradient-orange {
+    background-image: linear-gradient(90deg, #fcd34d, #fb923c);
+}
+
+.gradient-pink {
+    background-image: linear-gradient(90deg, #ec4899, #f43f5e);
+}
+
+.letter-spaced {
+    letter-spacing: 0.1em;
+}
+
+/* =========================================================================
+   Buttons
+   ========================================================================= */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-family: var(--font-outfit);
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition-normal);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background-color: var(--color-yellow);
+    color: #000;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-yellow-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(252, 211, 77, 0.3);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border-color: var(--color-pink);
+    color: var(--color-text-main);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(236, 72, 153, 0.1);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border-color: var(--color-yellow);
+    color: var(--color-yellow);
+}
+
+.btn-outline:hover {
+    background-color: rgba(252, 211, 77, 0.1);
+    color: var(--color-yellow-hover);
+}
+
+/* =========================================================================
+   Navigation
+   ========================================================================= */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: var(--transition-normal);
+    padding: 1.5rem 0;
+    background: transparent;
+}
+
+.navbar.scrolled {
+    background: rgba(11, 17, 32, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    color: var(--color-text-main);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links li a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-main);
+}
+
+.nav-links li a:hover {
+    color: var(--color-yellow);
+}
+
+.mobile-menu-btn {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--color-yellow);
+}
+
+/* =========================================================================
+   Footer
+   ========================================================================= */
+.footer {
+    padding: 2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-socials a {
+    font-family: var(--font-outfit);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-yellow);
+    letter-spacing: 0.05em;
+}
+
+.footer-socials a:hover {
+    color: #fff;
+}
+
+/* =========================================================================
+   Section Titles
+   ========================================================================= */
+.section-title {
+    font-family: var(--font-playfair);
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--color-text-main);
+    line-height: 1.2;
+    margin-bottom: 3rem;
+}
+
+.section-title-line {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-outfit);
+    font-size: 1.5rem;
+    color: var(--color-yellow);
+    letter-spacing: 1px;
+}
+
+.line-decorator {
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+    background-color: var(--color-text-muted);
+    margin-right: 1.5rem;
+}
+
+/* =========================================================================
+   Responsive Basics
+   ========================================================================= */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        /* Mobile menu logic in JS if needed */
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
